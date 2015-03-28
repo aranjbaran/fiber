@@ -1,0 +1,35 @@
+
+.pad { padding:20px; }
+
+
+
+
+.box
+{
+    background:#ddedef;
+    color:#444;
+    font-family: info;
+    font-size: 18px ;
+    width: 10em;
+    height: 10em;
+    
+    margin:3em;
+    color:#000;
+    float:left;
+    word-wrap: break-word;
+    overflow:scroll;
+}
+
+.row1, .row2{
+    padding:3em;
+}
+
+
+#footer {
+    width:100%;
+    height:80px;
+    position:relative;
+    bottom:0;
+    left:0;
+    background:#ee5;
+}

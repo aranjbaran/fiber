@@ -108,6 +108,16 @@ html {
 	top:50%;
 	margin:-130px 0 0 -166px;
 }
+
+.box.sign
+{
+    height:560px;
+    width:562px;
+    position:absolute;
+    left:40%;
+    top:50%;
+    margin:-130px 0 0 -166px;
+}
 .boxBody
 {
     background:#fefefe;
