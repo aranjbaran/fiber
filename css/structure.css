@@ -306,3 +306,7 @@ h3 {
 .contact {
   display: none;
 }
+
+#contacts-mentees .mentee {
+  display: none;
+}
