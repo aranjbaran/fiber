@@ -302,3 +302,7 @@ h3 {
 #images{
   white-space: nowrap;
 }
+
+.contact {
+  display: none;
+}

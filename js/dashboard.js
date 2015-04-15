@@ -6,12 +6,13 @@ $(document).ready(function() {
   var load = function() {
 
     if (typeof(Storage) !== "undefined") {
+
+      // Display current number of mentees in "impact" section
+      $("#num-mentees").html(localStorage.length);
+
       for (var i in localStorage) {
-        // add mentee to "Mentees" list
-
-        // add upcoming events with mentee
-
-        // count number of mentees and display in "impact" section
+        // Only show mentees if they appear in localStorage
+        $(".contact[data-id=" + i + "]").show();
       }
     }
     else {
