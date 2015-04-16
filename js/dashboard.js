@@ -11,6 +11,7 @@ $(document).ready(function() {
       $("#num-mentees").html(localStorage.length);
 
       for (var i in localStorage) {
+        console.log(i);
         // Only show mentees if they appear in localStorage
         $(".contact[data-id=" + i + "]").show();
       }
