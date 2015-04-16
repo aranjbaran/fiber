@@ -7,12 +7,9 @@ $(document).ready(function() {
 
     if (typeof(Storage) !== "undefined") {
 
-      // Display current number of mentees in "impact" section
-      $("#num-mentees").html(localStorage.length);
-
       for (var i in localStorage) {
         // Only show mentees if they appear in localStorage
-        $(".contact[data-id=" + i + "]").show();
+        $(".mentee[data-id=" + i + "]").show();
       }
     }
     else {

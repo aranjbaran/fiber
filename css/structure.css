@@ -302,3 +302,11 @@ h3 {
 #images{
   white-space: nowrap;
 }
+
+.contact {
+  display: none;
+}
+
+#contacts-mentees .mentee {
+  display: none;
+}
