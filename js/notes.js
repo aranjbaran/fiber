@@ -1,8 +1,5 @@
 $(document).ready(function() {
 
-  // Initialize namespace
-  Mentees = {};
-
   var load = function() {
 
     if (typeof(Storage) !== "undefined") {
