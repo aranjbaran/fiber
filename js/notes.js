@@ -31,13 +31,15 @@ $(document).ready(function() {
 function add_note() {
   // add new notes
   var note = prompt("Enter Your Note", "Today...");
-  $("#notes").append("<div>"+ note +"</div>")
-  // save new note
-  if (typeof(Storage) !== "undefined") {
-    var id = $("#content-main").attr("data-id")
-    var profile = JSON.parse(localStorage[id])
-    profile["notes"].push(note)
-    localStorage[id] = JSON.stringify(profile)
+  if (note != null){
+    $("#notes").append("<div>"+ note +"</div>")
+    // save new note
+    if (typeof(Storage) !== "undefined") {
+      var id = $("#content-main").attr("data-id")
+      var profile = JSON.parse(localStorage[id])
+      profile["notes"].push(note)
+      localStorage[id] = JSON.stringify(profile)
+    }
   }
 } 
         
