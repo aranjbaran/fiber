@@ -37,6 +37,11 @@ h3 {
   box-shadow: 0px 0px 2px #888888;
 }
 
+.section:hover {
+  background: #ffffff;
+  box-shadow: 0px 0px 3px 2px #B2C3D5;
+}
+
 /* DASHBOARD */
 #dashboard-header {
   width: 208px;
