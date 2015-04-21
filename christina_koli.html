@@ -23,12 +23,17 @@
 <body>
 
 
-  <a href="dashboard.html" class="back"><img src="img/backarrow.png" alt="Click here to go back"></a>
-  <div id="content-sidebar">
-      <div style="text-align: right;"><img src = "img/Christina_Koli.png"  alt="image"></div>
-  </div>
+<div id="profile">
+      <form action="contacts.html">
+        <button class="btnBack">Go Back</button>
+      </form>
 
-  <div id = "content-main" data-id="2">
+      <div id="content-sidebar">
+          <div style="text-align: right;"><img class="circle" src = "img/Christina_Koli.png"  alt="image"></div>
+      </div>
+
+      <div id = "content-main" data-id="2">
+        <div class="section">
 
   <div class = "info"> 
           <h3> Christina Koli </h3>
@@ -71,50 +76,17 @@
 
         <button type="button" class="btn btn-default" onclick="show()" id = "new_event">New Event</button>
     </div>
-      
-    <div class="row pad">
-    </div>
-
-     <div class = "history">
-          <h3> History</h3>
-              <ul>
-                <h4>2015</h4>
-                <p id="notes"></p>
-          </ul>
-          <button type="button" onclick="add_note()" class="btn btn-default">Add Note</button>
-        </div>
-
-    
-
+  <div class = "history">
+              <h3> History</h3>
+                  
+              <button type="button" onclick="add_note()" class="btn btn-default">Add Note</button>
+            </div>
+      </div>
+      </div>
+      </div>    
+      </div>
   </div>
-
-
-
-      
-      
-
-
-
-
-
-
-
-
-    </div>
-  </div>
-
-
-
-    
-  </div>
-
-
-
-
-
-
-
-
+</divd>
 <footer id="main">
   <p>Team Fiber | CS 179 Spring 2015</p>
 </footer>
