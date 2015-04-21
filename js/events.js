@@ -6,7 +6,6 @@ $(document).ready(function() {
 
       // get id of current page
       var id = $("#content-main").attr("data-id");
-      console.log(id)
 
       // index into local storage using id of current page
       var events = JSON.parse(localStorage[id])["events"]
@@ -38,7 +37,7 @@ function create_event(){
   // add all the info to local storage
   var id = $("#content-main").attr("data-id");
   profile = JSON.parse(localStorage[id]);
-  evnt = $("#time").val() + ":  Conversation with " + profile["name"];
+  evnt = $("#time").val() + "__Conversation with " + profile["name"];
   profile["events"].push(evnt);
   localStorage[id] = JSON.stringify(profile)
 

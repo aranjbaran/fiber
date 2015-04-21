@@ -34,6 +34,7 @@ h3 {
   background: #F8F8F8;
   padding: 10px;
   border-radius: 10px;
+  margin: 0px 0px 20px 20px;
   box-shadow: 0px 0px 2px #888888;
 }
 
@@ -58,11 +59,6 @@ h3 {
   text-align: center;
 }
 
-#content div {
-  margin-left: 20px;
-  margin-bottom: 20px;
-}
-
 .back {
   float: left;
   position: absolute;
@@ -77,6 +73,11 @@ h3 {
   display: inline-block;
   width: 500px;
   vertical-align: top;
+}
+
+.fc-left {
+  margin-left: 12px;
+  font-weight: bold;
 }
 
 #impact-text {

@@ -15,11 +15,22 @@ $(document).ready(function() {
         $(".contact[data-id=" + i + "]").show();
 
         // Load upcoming events and add to page
+        var calendar_events = [];
         var events = JSON.parse(localStorage[i])["events"];
         for (i in events) {
-          $("#upcoming").append("<div class='event'>" + events[i] + "</div>");
+          res = events[i].split('__');
+          calendar_events.push({title:res[1], start:res[0]});
+          // $("#upcoming").append("<div class='event'>" + events[i] + "</div>");
         }
       }
+
+      $('#calendar').fullCalendar({
+        events: calendar_events,
+        height: 150,
+        defaultView: "basicWeek",
+        weekends: false,
+        columnFormat: "ddd"
+      })
     }
     else {
       console.log("No Local Storage");
