@@ -42,19 +42,19 @@
           <p> Interests: Medicine, global health, mobile applications.</p>
   </div>
 
-  <div class = "events">
+  <div class = "events" class="scroll">
           <h3> Upcoming Events with Christina </h3>
-              <ul id="events">
-                <li><a href="contact_call.html">Wednesday 6/4 at 2pm - Conversation with Christina</a></li>
-            <li>Monday 6/11 at 4pm - Conversation with Christina</li>
-            <li>Thursday 6/14 at 4pm - Conversation with Christina</li>
+              <ul id="events" class='constrained'>
+                <li>06/04/2015 02:00 PM: Conversation with Christina</li>
+            <li>06/11/2015 04:00 PM: Conversation with Christina</li>
+            <li>06/14/2015 04:00 PM: Conversation with Christina</li>
           </ul>
 
 
 <div hidden id="create_event">
       <div class="form-group">
               <div id="datetimepicker2" class="input-append">
-                    <input data-format="MM/dd/yyyy HH:mm:ss PP" placeholder = "MM/dd/yyyy HH:mm:ss PP"class = "form-control" id = "time" type="text"></input>
+                    <input data-format="MM/dd/yyyy HH:mm PP" placeholder = "MM/dd/yyyy HH:mm PP"class = "form-control" id = "time" type="text"></input>
               <span class = "add-on">
                     <i  class = data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
               </span>
@@ -76,8 +76,13 @@
 
         <button type="button" class="btn btn-default" onclick="show()" id = "new_event">New Event</button>
     </div>
-  <div class = "history">
+  <div class = "history" class='scroll'>
               <h3> History</h3>
+                  <ul class="constrained">
+                    <h4>2015</h4>
+                <p id="notes 1"> 5/20 - Our first meeting: Alex and I developed a once-a-week plan to work on his conversational English. He remarks that while he is not quiet by nature, he feels a language barrier in school and this makes him seem passive to his teachers.  </p>
+                <p id="notes 1"> </p>
+              </ul>
                   
               <button type="button" onclick="add_note()" class="btn btn-default">Add Note</button>
             </div>
