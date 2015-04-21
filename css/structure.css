@@ -373,7 +373,7 @@ h3 {
 #nav{
   margin: 30px;
   margin-top: 0px;
-  padding: 20px;
+  padding: 15px;
   background-color: #fffffe;
   top: 0px;
   height: 10px;
@@ -384,6 +384,7 @@ h3 {
 
 #nav a{
   color:black;
+  font-size: 12px;
 
 }
 #nav img{
