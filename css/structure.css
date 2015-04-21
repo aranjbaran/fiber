@@ -356,5 +356,50 @@ h3 {
   overflow-y :scroll;
 }
 
+/* NAV-BAR */
+#nav-bar li{
+  display:inline;
+
+}
+
+#dash, #user{
+  float:right;
+  top: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+#nav{
+  margin: 30px;
+  margin-top: 0px;
+  padding: 15px;
+  background-color: #fffffe;
+  top: 0px;
+  height: 10px;
+  width:100%;
+  vertical-align:middle;
+
+}
+
+#nav a{
+  color:black;
+  font-size: 12px;
+
+}
+#nav img{
+  vertical-align: middle;
+}
+
+#user{
+  position:absolute;
+  right: 320px;
+}
+
+#dash{
+  position: absolute;
+  right:150px;
+}
+
 
 
