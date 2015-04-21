@@ -11,8 +11,14 @@ $(document).ready(function() {
       $("#num-mentees").html(localStorage.length);
 
       for (var i in localStorage) {
-        // Only show mentees if they appear in localStorage
+        // Only show mentees in sidebar if they appear in localStorage
         $(".contact[data-id=" + i + "]").show();
+
+        // Load upcoming events and add to page
+        var events = JSON.parse(localStorage[i])["events"];
+        for (i in events) {
+          $("#upcoming").append("<div class='event'>" + events[i] + "</div>");
+        }
       }
     }
     else {
