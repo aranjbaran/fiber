@@ -16,6 +16,10 @@ h3 {
   padding: 10px;
 }
 
+.section {
+
+}
+
 /* DASHBOARD */
 #content {
   width: 800px;
@@ -39,7 +43,7 @@ h3 {
 
 #content-sidebar {
   display: inline-block;
-  width: 200px;
+  width: 250px;
 }
 
 #content-main {
@@ -66,6 +70,9 @@ h3 {
   display: none;
 }
 
+button#button-mentees {
+
+}
 
 /* PROFILE */
 #profile {
