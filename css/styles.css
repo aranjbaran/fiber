@@ -67,11 +67,6 @@ h3 {
 }
 
 /* mentees page */
-#content2{
-  width:inherit;
-  margin: 0 auto;
-  border-radius: 10px;
-}
 
 #content h1 {
   text-align: center;
@@ -114,8 +109,20 @@ h3 {
   white-space: nowrap;
 }
 
+#contacts #content-sidebar {
+  width: 175px;
+}
+
+#contacts #content-sidebar button {
+  width: auto;
+}
+
 .contact {
   display: none;
+}
+
+#contacts-mentees {
+  vertical-align: top;
 }
 
 #contacts-mentees .mentee {
