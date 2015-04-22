@@ -4,9 +4,9 @@ function add_user() {
 	if (typeof(Storage) !== "undefined") {
 		// get info from html and make profile object
 		var profile = {
-			first: $("#firstname")[0].value,
-			middle: $("#middlename")[0].value,
-			last:$("#lastname")[0].value,
+			name: $("#firstname")[0].value + " " +
+			      $("#middlename")[0].value + " " + 
+			      $("#lastname")[0].value, 
 			bday: $("#birth")[0].value,
 			interests: []
 		};
