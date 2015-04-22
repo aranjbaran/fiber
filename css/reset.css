@@ -16,6 +16,15 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+
+}
+
+#nav-logo{
+  top:0px;
+}
+
+#dashboard-header{
+  padding-top: 20px;
 }
 
 article, aside, details, figcaption, figure,

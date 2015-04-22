@@ -139,7 +139,7 @@ button#button-mentees {
   margin: 30px;
   margin-top: 0px;
   padding: 15px;
-  top: 0px;
+  top: 10px;
   height: 10px;
   width:100%;
   vertical-align:middle;
@@ -153,6 +153,7 @@ button#button-mentees {
 }
 #nav img{
   vertical-align: middle;
+  top:0px;
 }
 
 #user{
@@ -163,6 +164,13 @@ button#button-mentees {
 #dash{
   position: absolute;
   right:150px;
+}
+
+#nav-logo{
+  position: absolute;
+  left: 0px;
+  
+
 }
 
 ::-webkit-scrollbar {
