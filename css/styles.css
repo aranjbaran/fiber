@@ -113,8 +113,15 @@ h3 {
   width: 175px;
 }
 
-#contacts #content-sidebar button {
+#content-sidebar button {
+  border-radius: 0px;
   width: auto;
+  margin: 10px auto 0;
+}
+
+#chatroom {
+  width: 150px;
+  margin: 0 auto;
 }
 
 .contact {
@@ -126,12 +133,13 @@ h3 {
 .sidepic{
   width:75px;
   height:75px;
-  float:left;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .sidename{
-  float:right;
-  margin-top: 31px;
+  display: inline-block;
+  margin-left: 12px;
 }
 
 #contacts-mentees {
@@ -164,19 +172,6 @@ h3 {
 .mentee-text {
   display: inline-block;
   width: 300px;
-}
-
-button#button-mentees {
-  border-radius: 0px;
-
-}
-
-#btnBack{
-  padding-top: 40px;
-}
-
-#btnBack2{
-  padding-top: 40px;
 }
 
 
