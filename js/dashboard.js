@@ -10,17 +10,16 @@ $(document).ready(function() {
       // Display current number of mentees in "impact" section
       $("#num-mentees").html(localStorage.length);
 
+      var calendar_events = [];
       for (var i in localStorage) {
         // Only show mentees in sidebar if they appear in localStorage
         $(".contact[data-id=" + i + "]").show();
 
         // Load upcoming events and add to page
-        var calendar_events = [];
         var events = JSON.parse(localStorage[i])["events"];
         for (i in events) {
           res = events[i].split('__');
           calendar_events.push({title:res[1], start:res[0]});
-          // $("#upcoming").append("<div class='event'>" + events[i] + "</div>");
         }
       }
 

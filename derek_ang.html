@@ -16,6 +16,11 @@
 <script src="js/events.js" type="text/javascript"></script>
 <script src = "js/bootstrap-datetimepicker.min.js"></script>
 <script src = "js/bootstrap.min.js"></script>
+
+<link rel='stylesheet' href='fullcalendar/fullcalendar.css' />
+<script src='fullcalendar/lib/moment.min.js'></script>
+<script src='fullcalendar/fullcalendar.js'></script>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -47,10 +52,7 @@
 
   <div class = "events" class='scroll'>
           <h3> Upcoming Events with Derek </h3>
-              <ul id="events" class='constrained'>
-                <li>06/04/2015 07:00 PM: Conversation with Derek</li>
-            <li>06/14/2015 07:00 PM: Conversation with Derek</li>
-          </ul>
+          <div id="calendar"></div>
 
 <div hidden id="create_event">
       <div class="form-group">
