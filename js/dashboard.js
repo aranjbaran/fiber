@@ -8,9 +8,12 @@ $(document).ready(function() {
     if (typeof(Storage) !== "undefined") {
 
       // Display current number of mentees in "impact" section
-      $("#num-mentees").html(localStorage.length);
+      $("#num-mentees").html((localStorage.length - 1));
 
       for (var i in localStorage) {
+        // don't display the own users info
+        if (i == 'profile')
+          continue;
         // Only show mentees in sidebar if they appear in localStorage
         $(".contact[data-id=" + i + "]").show();
 
@@ -31,6 +34,9 @@ $(document).ready(function() {
         weekends: false,
         columnFormat: "ddd"
       })
+    
+      // display the proper map
+      $('#mapimg').attr("src", "img/map" + (localStorage.length - 1) + ".png");
     }
     else {
       console.log("No Local Storage");

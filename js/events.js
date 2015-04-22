@@ -37,11 +37,8 @@ function create_event(){
   // add all the info to local storage
   var id = $("#content-main").attr("data-id");
   profile = JSON.parse(localStorage[id]);
-<<<<<<< HEAD
-  evnt = $("#time").val() + "__Conversation with " + profile["name"];
-=======
   evnt = $("#time").val() + "__" + profile["name"];
->>>>>>> 2201b959d25ae5fb5406e696c808817041afd31a
+
   profile["events"].push(evnt);
   localStorage[id] = JSON.stringify(profile)
 
