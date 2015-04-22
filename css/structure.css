@@ -60,11 +60,30 @@
     border-top:1px;
     box-shadow:rgba(0,0,0,0.15) 0 0 1px;
 }
+
 .box.login {
   width: 350px;
   height: 270px;
   margin: 0 auto;
   display: block;
+}
+
+.box.sign {
+  width: 350px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.box.interests {
+  width: 350px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
 }
 
 .boxBody
