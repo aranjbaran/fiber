@@ -66,6 +66,10 @@ h3 {
   border-radius: 10px;
 }
 
+#about #content {
+  width: 691px;
+}
+
 /* mentees page */
 
 #content h1 {
@@ -84,6 +88,7 @@ h3 {
 }
 
 #content-sidebar {
+  text-align: center;
   display: inline-block;
   width: 250px;
 }
@@ -114,7 +119,7 @@ h3 {
 }
 
 #content-sidebar button {
-  border-radius: 0px;
+  border-radius: 2px;
   width: auto;
   margin: 10px auto 0;
 }
