@@ -129,6 +129,30 @@ h3 {
   display: none;
 }
 
+#add_mentees #content-sidebar p {
+  margin-bottom: 10px;
+}
+
+.mentee {
+  margin-top: 10px;
+}
+
+.mentee img {
+  display: inline-block;
+  width: 100px;
+  vertical-align: middle;
+}
+
+.mentee-name {
+  display: inline;
+  font-weight: bold;
+}
+
+.mentee-text {
+  display: inline-block;
+  width: 300px;
+}
+
 button#button-mentees {
   border-radius: 0px;
 

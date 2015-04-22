@@ -11,7 +11,7 @@
   <script src="js/add_mentees.js" type="text/javascript"></script>
 </head>
 
-<body>
+<body id="add_mentees">
 
   <div id="nav">
     <ul id="nav-bar">
@@ -23,55 +23,67 @@
 
   <div id="content">
     <header>
-      <h1>Add new mentees</h1>
+      <h1>Find Mentees</h1>
     </header>
 
-    <p> To add a new mentee, check the box below the mentee. When you are done adding new mentees, hit the submit button. </p>
-
     <div id="content-sidebar">
-    <form action = "dashboard.html">
-      <button class="btnLogin">Submit</button>
-    </form>
+      <form action = "dashboard.html">
+        <p> To add a new mentee, check the box next to the mentee. When you are done adding new mentees, press the submit button. </p>
+        <button class="btnLogin">Submit</button>
+      </form>
     </div>
 
-    <div id="content-main">
-      <div class='section'>
+    <div class="section" id="content-main">
       <div id="mentees">
 
         <div class="mentee" data-id="1" data-name="Alex">
-          <img class="circle" src="img/Alex_Gonzales.png"><p>Alex Gonzales</p>
-          <p>16 year old in Los Angeles, CA; interested in Latin American Politics and NBA basketball. </p>
-          <input class="check_mentee" type="checkbox" />
+          <img class="circle" src="img/Alex_Gonzales.png">
+          <div class="mentee-text">
+            <p class="mentee-name">Alex Gonzales</p>
+            <input class="check_mentee" type="checkbox" />
+            <p>16 year old in Los Angeles, CA; interested in Latin American Politics and NBA basketball. </p>
+          </div>
         </div>
 
         <div class="mentee" data-id="2" data-name="Christina">
-          <img class="circle" src = "img/Christina_Koli.png" ><p>Christina Koli</p>
-          <p>18 year old in Nairobi, Kenya; interested in medicine and global health</p>
-          <input class="check_mentee" type="checkbox" />
+          <img class="circle" src = "img/Christina_Koli.png" >
+          <div class="mentee-text">
+            <p class="mentee-name">Christina Koli</p>
+            <input class="check_mentee" type="checkbox" />
+            <p>18 year old in Nairobi, Kenya; interested in medicine and global health</p>
+          </div>
         </div>
 
         <div class="mentee" data-id="3" data-name="Derek">
-          <img class="circle" src = "img/Derek_Ang.png" ><p>Derek Ang</p>
-          <p>15 year old in Reno, Nevada; interested in design and tinkering</p>
-          <input class="check_mentee" type="checkbox" />
+          <img class="circle" src = "img/Derek_Ang.png" >
+          <div class="mentee-text">
+            <p class="mentee-name">Derek Ang</p>
+            <input class="check_mentee" type="checkbox" />
+            <p>15 year old in Reno, Nevada; interested in design and tinkering</p>
+          </div>
         </div>
 
         <div class="mentee" data-id="4" data-name="Jamin">
-          <img class="circle" src = "img/Jamin_Zhu.png" ><p>Jamin Zhu</p>
-          <p>18 year old in Beijing, China; interested in planes and calligraphy</p>
-          <input class="check_mentee" type="checkbox" />
+          <img class="circle" src = "img/Jamin_Zhu.png" >
+          <div class="mentee-text">
+            <p class="mentee-name">Jamin Zhu</p>
+            <input class="check_mentee" type="checkbox" />
+            <p>18 year old in Beijing, China; interested in planes and calligraphy</p>
+          </div>
         </div>
 
         <div class="mentee" data-id="5" data-name="Maria">
-          <img class="circle" src = "img/Maria_Martinez.png" ><p>Maria Martinez</p>
-          <p>13 year old in Mexico City, Mexico; interested in become a veterinarian, loves animals.</p>
-          <input class="check_mentee" type="checkbox" />
+          <img class="circle" src = "img/Maria_Martinez.png" >
+          <div class="mentee-text">
+            <p class="mentee-name">Maria Martinez</p>
+            <input class="check_mentee" type="checkbox" />
+            <p>13 year old in Mexico City, Mexico; interested in become a veterinarian, loves animals.</p>
+          </div>
         </div>
 
       </div>
     </div>
 
-</div>
   </div>
 
   <footer id="main">
