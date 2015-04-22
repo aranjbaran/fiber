@@ -59,6 +59,12 @@ h3 {
   text-align: center;
 }
 
+#mapimg{
+  width:128px;
+  height:129px;
+  padding: 5px;
+}
+
 .back {
   float: left;
   position: absolute;
@@ -116,7 +122,7 @@ button#button-mentees {
 }
 
 .constrained{
-  width:500px;
+  width:inherit;
   height:100px;
   overflow-y :scroll;
 }
@@ -181,4 +187,13 @@ button#button-mentees {
     border-radius: 4px;
     background-color: rgba(0,0,0,.5);
     -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+/* Calendar styles */
+.fc-toolbar h2 {
+  font-size: 16px;
+}
+
+.picker{
+  width:94.5%;
 }

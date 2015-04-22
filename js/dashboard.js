@@ -8,19 +8,24 @@ $(document).ready(function() {
     if (typeof(Storage) !== "undefined") {
 
       // Display current number of mentees in "impact" section
-      $("#num-mentees").html(localStorage.length);
+      var num_mentees = localStorage.length - 1;
+      if (num_mentees < 0) { num_mentees = 0 }
+      var html = num_mentees == 1 ? "1 mentee" : num_mentees.toString() + " mentees";
+      $("#num-mentees").html(html);
 
+      var calendar_events = [];
       for (var i in localStorage) {
+        // don't display the own users info
+        if (i == 'profile')
+          continue;
         // Only show mentees in sidebar if they appear in localStorage
         $(".contact[data-id=" + i + "]").show();
 
         // Load upcoming events and add to page
-        var calendar_events = [];
         var events = JSON.parse(localStorage[i])["events"];
         for (i in events) {
           res = events[i].split('__');
           calendar_events.push({title:res[1], start:res[0]});
-          // $("#upcoming").append("<div class='event'>" + events[i] + "</div>");
         }
       }
 
@@ -31,6 +36,9 @@ $(document).ready(function() {
         weekends: false,
         columnFormat: "ddd"
       })
+    
+      // display the proper map
+      $('#mapimg').attr("src", "img/map" + (localStorage.length - 1) + ".png");
     }
     else {
       console.log("No Local Storage");
