@@ -49,8 +49,7 @@ function create_event(){
   var id = $("#content-main").attr("data-id");
   profile = JSON.parse(localStorage[id]);
 
-
-  evnt = $("#time").val() + "__" + profile["name"];
+  evnt = $("#time").val() + "__Conversation with " + profile["name"];
 
   profile["events"].push(evnt);
   localStorage[id] = JSON.stringify(profile)

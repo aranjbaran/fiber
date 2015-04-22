@@ -8,7 +8,10 @@ $(document).ready(function() {
     if (typeof(Storage) !== "undefined") {
 
       // Display current number of mentees in "impact" section
-      $("#num-mentees").html((localStorage.length - 1));
+      var num_mentees = localStorage.length - 1;
+      if (num_mentees < 0) { num_mentees = 0 }
+      var html = num_mentees == 1 ? "1 mentee" : num_mentees.toString() + " mentees";
+      $("#num-mentees").html(html);
 
       var calendar_events = [];
       for (var i in localStorage) {
