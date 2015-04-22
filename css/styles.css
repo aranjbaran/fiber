@@ -88,15 +88,22 @@ h3 {
 }
 
 #content-sidebar {
-  text-align: center;
   display: inline-block;
   width: 250px;
+}
+
+#content-sidebar #mentees-list h3 {
+  text-align: center;
 }
 
 #content-main {
   display: inline-block;
   width: 500px;
   vertical-align: top;
+}
+
+#content-main h3 {
+  text-align: center;
 }
 
 .fc-left {
@@ -135,14 +142,14 @@ h3 {
   padding: 5px;
 }
 
-.sidepic{
-  width:75px;
-  height:75px;
+.sidepic {
+  width:50px;
+  height:50px;
   display: inline-block;
   vertical-align: middle;
 }
 
-.sidename{
+.sidename p {
   display: inline-block;
   margin-left: 12px;
 }
