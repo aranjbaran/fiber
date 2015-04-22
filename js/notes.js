@@ -6,7 +6,6 @@ $(document).ready(function() {
 
       // get id of current page
       var id = $("#content-main").attr("data-id");
-      console.log(id)
 
       // index into local storage using id of current page
       var notes = JSON.parse(localStorage[id])["notes"]

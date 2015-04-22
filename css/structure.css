@@ -57,6 +57,14 @@
     color:#666;
     font-family: info;
     vertical-align: top;
+    border-top:1px;
+    box-shadow:rgba(0,0,0,0.15) 0 0 1px;
+}
+.box.login {
+  width: 350px;
+  height: 270px;
+  margin: 0 auto;
+  display: block;
 }
 
 .boxBody
