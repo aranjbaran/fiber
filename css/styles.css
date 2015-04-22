@@ -119,6 +119,7 @@ button#button-mentees {
     width: 1000px;
     margin: auto;
     background-color: #f3f3f3;
+    overflow: auto;
 }
 
 .constrained{
