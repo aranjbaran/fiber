@@ -137,18 +137,6 @@ button#button-mentees {
 
 
 /* PROFILE */
-#profile {
-    display: inline-block;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: inherit;
-    margin: auto;
-    background-color: #f3f3f3;
-    overflow: auto;
-}
 
 .constrained{
   width:inherit;
@@ -157,55 +145,49 @@ button#button-mentees {
 }
 
 /* NAV-BAR */
-#nav-bar li{
+#nav {
+  height: 7px;
+  padding: 20px;
+  margin-bottom: 10px;
+  background-color: white;
+  box-shadow: 5px 0px 5px gray;
+}
+
+#nav-bar li {
   display:inline;
-
-}
-
-#dash, #user{
-  float:right;
-  top: 0px;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: 20px;
-}
-
-#nav{
-  margin: 30px;
-  margin-top: 0px;
-  padding: 15px;
-  top: 10px;
-  height: 10px;
-  width:100%;
-  vertical-align:middle;
-
-}
-
-#nav a{
-  color:black;
-  font-size: 12px;
-
-}
-#nav img{
-  vertical-align: middle;
-  top:0px;
-}
-
-#user{
   position:absolute;
-  right: 320px;
+  top: 2px;
 }
 
-#dash{
-  position: absolute;
-  right:150px;
+#nav-bar li a {
+  color: #666;
+  font-size: 16px;
 }
 
-#nav-logo{
-  position: absolute;
-  left: 0px;
-  
+#nav-bar img {
+  vertical-align: bottom;
+}
 
+#nav-bar a:hover {
+  color: #333;
+}
+
+#nav-bar li#nav-logo a{
+  font-size: 22px;
+}
+
+li#nav-logo img {
+  vertical-align: middle;
+}
+
+#nav-bar #user {
+  right: 200px;
+  top: 5px;
+}
+
+#nav-bar #dash {
+  right: 50px;
+  top: 5px;
 }
 
 ::-webkit-scrollbar {
