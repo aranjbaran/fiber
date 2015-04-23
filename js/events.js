@@ -41,7 +41,7 @@ var load = function() {
 function show() {
   $("#create_event").show();
   $("#new_event").hide();
-  }
+}
 
 function create_event(){
   // get name of person

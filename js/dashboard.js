@@ -1,7 +1,6 @@
-$(document).ready(function() {
+Mentee = {}
 
-  // Initialize namespace
-  Mentees = {};
+$(document).ready(function() {
 
   var load = function() {
 
@@ -18,6 +17,9 @@ $(document).ready(function() {
         // don't display the own users info
         if (i == 'profile')
           continue;
+
+        Mentee = JSON.parse(localStorage[i]);
+
         // Only show mentees in sidebar if they appear in localStorage
         $(".contact[data-id=" + i + "]").show();
 
@@ -33,10 +35,15 @@ $(document).ready(function() {
       if (calendar_events.length == 0) {
         $("#dialog").dialog({
           resizable: false,
-          height: 150,
+          height: 350,
+          width: 350,
           modal: true
         });
       }
+
+      $("#mentee-replace").html(Mentee.name);
+      $("#mentee-replace").attr("data-name", Mentee.name);
+      $("#mentee-replace").attr("data-id", Mentee.id);
 
       $('#calendar').fullCalendar({
         events: calendar_events,
@@ -45,7 +52,7 @@ $(document).ready(function() {
         weekends: false,
         columnFormat: "ddd"
       })
-    
+
       // display the proper map
       $('#mapimg').attr("src", "img/map" + (localStorage.length - 1) + ".png");
     }
@@ -58,3 +65,20 @@ $(document).ready(function() {
   load();
 
 });
+
+function create_event(){
+
+  $("#dialog").dialog("close");
+
+  var id = $("#mentee-replace").attr("data-id");
+  var name = $("#mentee-replace").attr("data-name");
+  var time = $("#time").val();
+  var event = {title:name, start:time}
+  $('#calendar').fullCalendar("renderEvent", event);
+
+  profile = JSON.parse(localStorage[id]);
+  evnt = time + "__" + name;
+  profile["events"].push(evnt);
+  localStorage[id] = JSON.stringify(profile)
+
+}
