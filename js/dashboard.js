@@ -39,6 +39,9 @@ $(document).ready(function() {
           width: 350,
           modal: true
         });
+
+        // hide hangout button
+        $("#chatroom").html("<p>Schedule an event with one of your mentees first!</p>");
       }
 
       $("#mentee-replace").html(Mentee.name);
@@ -81,4 +84,5 @@ function create_event(){
   profile["events"].push(evnt);
   localStorage[id] = JSON.stringify(profile)
 
+  location.reload();
 }
