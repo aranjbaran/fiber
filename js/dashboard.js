@@ -29,6 +29,15 @@ $(document).ready(function() {
         }
       }
 
+      // if there are no events, prompt user to add one
+      if (calendar_events.length == 0) {
+        $("#dialog").dialog({
+          resizable: false,
+          height: 150,
+          modal: true
+        });
+      }
+
       $('#calendar').fullCalendar({
         events: calendar_events,
         height: 150,
