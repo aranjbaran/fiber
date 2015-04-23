@@ -119,6 +119,19 @@ h3 {
 
 .contact {
   display: none;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.sidepic{
+  width:75px;
+  height:75px;
+  float:left;
+}
+
+.sidename{
+  float:right;
+  margin-top: 31px;
 }
 
 #contacts-mentees {
