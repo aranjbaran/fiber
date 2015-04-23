@@ -213,7 +213,7 @@
     line-height: 1.3333333;
     border-radius: 6px;
     display: block;
-    width: 100%;
+    width: 60%;
     -webkit-appearance: button;
     overflow: visible;
     text-transform: none;
@@ -230,7 +230,7 @@
     line-height: 1.3333333;
     border-radius: 6px;
     display: block;
-    width: 25%;
+    width: 10%;
     -webkit-appearance: button;
     overflow: visible;
     text-transform: none;
