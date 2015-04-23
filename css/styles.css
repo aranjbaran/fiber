@@ -13,7 +13,7 @@ header {
 }
 
 h1 {
-  font-size: 3.5em;
+  font-size: 36px;
   height: 30px;
   margin: 30px 0px 10px 0px;
 }
@@ -36,7 +36,7 @@ header h1 {
 
 
 h3 {
-  font-size: 1.5em;
+  font-size: 17px;
   margin: 10px 0px;
   padding: 10px;
 }
