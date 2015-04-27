@@ -152,6 +152,7 @@ h3 {
 .sidename p {
   display: inline-block;
   margin-left: 12px;
+  text-decoration: underline;
 }
 
 #contacts-mentees {
