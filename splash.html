@@ -21,10 +21,10 @@
 </head>
 
 <body>
-  
-  <h1 id="logo">Talk Together</h1>
-  <img src="img/logo.png"/>  
-  
+  <div class="logo">
+    <h1 id="logo">Talk Together</h1>
+    <img src="img/logo.png"/>  
+  </div>
   <div id="content">
 
     <header>
@@ -40,10 +40,7 @@
       <div class="section" >
         <h3>Meet with your mentees</h3>
         <p>Connect using Google Hangouts with mentees and talk about everything and everything.  Make connections, and get them excited to learn English!</p>
-      </div>
 
-
-      <div class="section">
         <h3>Remember</h3>
         Record your experiences.  Allow TalkTogether to share the history of your interactions, ensuring that progress is made every week.
       </div>
@@ -53,12 +50,12 @@
       <div id="buttons">
         <form class="signup"action="signup.html">
           Don't Have an Account?
-          <input type="submit" class="btnLogin" onclick="window.localStorage.clear();" value="Sign Up">
+          <button type="submit" class="btnLogin" onclick="window.localStorage.clear();" value="Sign Up">Sign Up</button>
         </form>
       <br>
         <form class="signin"  action="welcome.html">
           Already registered?
-          <input type="submit" class="btnLogin" value="Sign In">
+          <button type="submit" class="btnLogin" value="Sign In"/>Sign In</button>
         </form>
       </div>
     </div>

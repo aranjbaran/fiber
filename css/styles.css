@@ -300,3 +300,7 @@ input[type=checkbox]
   width: 250px;
   font-size: 20px;
 }
+
+.logo{
+  text-align: center;
+}
