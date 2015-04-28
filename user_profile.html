@@ -24,17 +24,17 @@
 
   <div id="content">
     <div id="content-sidebar">
-        <div style="text-align: right;"><img class="circle" src = "img/user.jpg"  alt="image"></div>
+        <div style="text-align: right;"><img id = "user_prof_pic" class="circle" src = "img/default-user-image.png"  alt="image"></div>
     </div>
 
     <div id = "content-main">
-      <div class="section">
+      <div id = "section1" class="section">
         <div class="info" id="bio">
             <h3> Personal Profile </h3>
             <p id="name"> Name: </p>
             <p id="bday"> Birthday: </p>
             <p id="nat_lang"> Native Language: </p>
-            <button type="button" onclick="edit_info()" class="btn btn-default">Edit Info</button>
+            <button class= "edit" type="button" onclick="edit_info()" class="btn btn-default">Edit Info</button>
         </div>
         <div hidden class="info" id="edit_bio">
             <h3> Personal Profile </h3>
@@ -44,14 +44,14 @@
             <button type="button" onclick="save_info()" class="btn btn-default">Save Info</button>
         </div>
     </div>
-    <div class ="section">
+    <div id = "section2" class ="section">
         <div class ="info" id="interests">
             <h3> Interests </h3>
             <p id="des_lang"> Desired Language:  </p>
             <p id="hobby"> Favorite Hobby: </p>
             <p id="book"> Favorite Book: </p>
             <p id="sport"> Favorite Sport: </p>
-            <button type="button" onclick="edit_interests()" class="btn btn-default">Edit Interests</button>
+            <button class = "edit" type="button" onclick="edit_interests()" class="btn btn-default">Edit Interests</button>
         </div>
         <div hidden class ="info" id="edit_interests">
             <h3> Interests </h3>
