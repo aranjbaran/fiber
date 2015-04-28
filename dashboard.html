@@ -75,7 +75,7 @@
       </div>
       <div class="section" id="join-call">
         <h3>Time to Talk Together?</h3>
-        <div id="chatroom">
+        <div id="chatroom" onclick="display_select()">
           <script src="https://apis.google.com/js/platform.js" async defer></script>
           <div class="g-hangout" data-render="createhangout"
            data-initial_apps="[{ app_id : '123456789012', start_data : 'dQw4w9WgXcQ', 'app_type' : 'ROOM_APP' }]"></div>
@@ -96,6 +96,7 @@
         <img id="mapimg" src="img/globe.png" alt="A map of the countries in which your mentees live">
         <div id="impact-text">
           <div><p>You have <span id="num-mentees"></span>! Check the map to see their hometowns and the impact you're having on the world.</p></div>
+        <!--<button onclick="display_select()" id="test">Delete Me Later!!</button>! THIS IS FOR TESTING WHEN I HAD NOT THE HANGOUT BUTTON-->
         </div>
       </div>
     </div>
@@ -136,35 +137,67 @@
       </div>
 
   </div>
-
   <div id="add_note" title="Add Note!" hidden>
-
-    <p>It looks like you haven't scheduled an event with any of your mentees yet.</p>
-    <p>Use the calendar below to schedule a time to talk with your mentee
-    <span id="mentee-replace"></span>.</p>
-
-      <div id="create_event">
+    <p>How did talking together with 
+      <span id="mentee_note">so and so</span> go?
+    </p>
+    <p>Enter a note to remember some key points from the meeting.
+       You can always add more notes later and look at old notes on the mentees profile pages.
+    </p>
+      <div id="note">
         <div class="form-group">
-          <div id="datetimepicker2" class="input-append">
-            <input data-format="MM/dd/yyyy HH:mm PP" placeholder = "MM/dd/yyyy HH:mm PP"class = "form-control" id = "time" type="text"></input>
-            <span class = "add-on">
-              <i class = data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
-            </span>
-          </div>
-        </div>
-        <script type="text/javascript">
-          $(function() {
-            $('#datetimepicker2').datetimepicker({
-              language: 'en',
-              pick12HourFormat: true
-            });
-          });
-        </script>
-        <div class="form-group">
-            <button type="submit" onclick="create_event()" class="btn btn-default">Create</button>
+        <textarea id="note_text"></textarea>    
         </div>
       </div>
+        <div class="form-group">
+            <button type="submit" onclick="create_note()" class="btn btn-default">Create</button>
+        </div>
+      </div>
+  </div>
 
+    <div id="select_mentee" title="Add Note!" hidden>
+    <p>How did talking together go?</p>
+    <p>Choose a mentee to save a note for him/her.
+    </p>
+    <form>
+      <div hidden class="mentee" data-id="1" data-name="Alex">
+            <div class="mentee-text">
+              <p class="mentee-name">Alex Gonzales</p>
+              <input class="check_mentee" type="radio" name="m" />
+            </div>
+      </div>
+      <div hidden class="mentee" data-id="2" data-name="Christina">
+          <div class="mentee-text">
+            <p class="mentee-name">Christina Koli</p>
+            <input class="check_mentee" type="radio" name="m" />
+          </div>
+        </div>
+
+        <div hidden class="mentee" data-id="3" data-name="Derek">
+          <div class="mentee-text">
+            <p class="mentee-name">Derek Ang</p>
+            <input class="check_mentee" type="radio" name="m" />
+          </div>
+        </div>
+
+        <div hidden class="mentee" data-id="4" data-name="Jamin">
+          <div class="mentee-text">
+            <p class="mentee-name">Jamin Zhu</p>
+            <input class="check_mentee" type="radio" name="m" />
+          </div>
+        </div>
+
+        <div hidden class="mentee" data-id="5" data-name="Maria">
+          <div class="mentee-text">
+            <p class="mentee-name">Maria Martinez</p>
+            <input class="check_mentee" type="radio" name="m" />
+          </div>
+        </div>
+      </form>
+        <div class="form-group">
+            <button type="submit" onclick="display_note()" class="btn btn-default">Choose</button>
+        </div>
+      </div>
   </div>
 
 </body>

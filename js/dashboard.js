@@ -22,7 +22,7 @@ $(document).ready(function() {
 
         // Only show mentees in sidebar if they appear in localStorage
         $(".contact[data-id=" + i + "]").show();
-
+        $(".mentee[data-id=" + i + "]").show();
         // Load upcoming events and add to page
         var events = JSON.parse(localStorage[i])["events"];
         for (i in events) {
@@ -69,6 +69,7 @@ $(document).ready(function() {
 
 });
 
+// create an event when the event create button is clicked on the initial popup
 function create_event(){
 
   $("#dialog").dialog("close");
@@ -85,4 +86,44 @@ function create_event(){
   localStorage[id] = JSON.stringify(profile)
 
   location.reload();
+}
+
+// display the note/select mentee after hangout button
+// has been pressed
+function display_select(){
+  // 
+  $("#select_mentee").dialog({
+    resizable: false,
+    height: 350,
+    width: 350,
+    modal: true
+  });
+}
+
+// display the note after hangout button has been pressed
+function display_note(){
+  // display the next box after user is selected
+  var name = $("input:radio[name='m']:checked").closest(".mentee").attr("data-name");
+  $("#mentee_note").html(name);
+  $("#add_note").dialog({
+    resizable: false,
+    height: 350,
+    width: 350,
+    modal: true
+  });
+}
+
+// add the note to the selected mentee
+function create_note(){
+  // get the person clicked
+  var id = $("input:radio[name='m']:checked").closest('.mentee').attr("data-id");
+  var person = JSON.parse(localStorage[id]);
+  var note = $("#note_text").val();
+  $("#note_text").val("");
+  person["notes"].push(note);
+  localStorage[id] = JSON.stringify(person);
+
+  // close dialogs
+  $("#select_mentee").dialog("close");
+  $("#add_note").dialog("close");
 }
